@@ -11,7 +11,4 @@ post: ## Create new post
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
 help: ## print help msg
-	@echo "build: Build the website"
-	@echo "post: Create  new post"
-	@echo "clean: Clean  the dist folder"
-	@echo "help: Print this help message"
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
