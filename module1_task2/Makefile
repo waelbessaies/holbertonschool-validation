@@ -3,7 +3,7 @@
 build:
 	@hugo
 
-clean: ## Clean the content of the directory dist
+clean: # Clean the content of the directory dist
 	rm -rf dist/*
 # Create new post
 post:
