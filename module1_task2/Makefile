@@ -10,7 +10,4 @@ post: ## Create new post
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
 help: ## print help msg
-	@echo "build: Build the site"
-	@echo "post: Clean the content of the directory dist"
-	@echo "clean: Create new post"
-	@echo "help: print help msg"
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
