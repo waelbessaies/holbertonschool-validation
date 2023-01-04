@@ -1,24 +1,19 @@
-####
-Module 1: Introduction to DevOps: Automate Everything to Focus on What Really Matters
+#### Module 1: Introduction to DevOps: Automate Everything to Focus on What Really Matters
 
 
-##
-Prerequisites
+## Prerequisites
 
-*
-GoHugo v0.80+
-*
-goLang
+* GoHugo v0.80+
+
+* goLang
 
 
-##
-Lifecycle
+## Lifecycle
 
-*
-build
-*
-clean
-*
-post
-*
-help
+* build
+
+* clean
+
+* post
+
+* help
