@@ -2,8 +2,8 @@
 # Build the site
 build:
 	@hugo
-
-clean: # Clean the content of the directory dist
+# Clean the content of the directory dist
+clean: 
 	rm -rf dist/*
 # Create new post
 post:
