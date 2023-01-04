@@ -1,6 +1,5 @@
 ## Go-Hugo website
-## Build the site
-build:
+build: ## Build the site
 	@hugo
 
 clean: ## Clean the content of the directory dist
