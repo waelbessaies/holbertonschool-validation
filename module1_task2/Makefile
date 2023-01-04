@@ -1,15 +1,16 @@
-# Go-Hugo website
-# Build the site
-build:
+## Go-Hugo website
+
+build:## Build the website
 	@hugo
-# Clean the content of the directory dist
-clean: 
+
+clean: ## Clean  the build directory
 	rm -rf dist/*
-# Create new post
-post:
+
+post: ## new blog post
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
-# print help msg
+
+help: ##  make help
 help: 
 	@echo "build: Build the website"
 	@echo "post: Create  new post"
