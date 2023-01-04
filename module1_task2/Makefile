@@ -10,4 +10,6 @@ post: ## Create new post
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
 help: ## print help msg
-	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+	@echo "build:  the website from the  in the directory dist"
+		@echo "clean: Clean  directory dist"
+		@echo "post: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME"
